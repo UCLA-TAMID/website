@@ -96,7 +96,7 @@
 
   /* ---------- STATS ---------- */
   .stats{padding:0;background:var(--navy);color:var(--white)}
-  .stats .grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.12)}
+  .stats .grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid rgba(255,255,255,.12)}
   .stat{padding:40px 20px;text-align:center;border-right:1px solid rgba(255,255,255,.12)}
   .stat:last-child{border-right:0}
   .stat b{display:block;font-family:var(--head);font-weight:800;font-size:38px;letter-spacing:.04em}
@@ -119,7 +119,7 @@
   .card p{font-size:15px;color:var(--muted)}
 
   /* ---------- RECRUITMENT ---------- */
-  .timeline{display:grid;grid-template-columns:repeat(6,1fr);gap:0;row-gap:36px;margin:24px 0 44px}
+  .timeline{display:grid;grid-template-columns:repeat(5,1fr);gap:0;row-gap:36px;margin:24px 0 44px}
   .step{padding:28px 22px 0 0;position:relative;border-top:2px solid var(--line)}
   .step::before{content:"";position:absolute;top:-8px;left:0;width:14px;height:14px;border-radius:50%;background:var(--white);border:3px solid var(--accent)}
   .step .date{font-family:var(--head);font-weight:700;font-size:12px;letter-spacing:.2em;color:var(--accent);text-transform:uppercase}
@@ -180,9 +180,9 @@
     .nav.menu-open{background:var(--white)}
     .nav.menu-open .logo{color:var(--navy)}
     .nav.menu-open .burger span{background:var(--navy)}
-    .stats .grid{grid-template-columns:1fr 1fr}
-    .stat:nth-child(2){border-right:0}
-    .stat{border-bottom:1px solid rgba(255,255,255,.12)}
+    .stat{padding:28px 8px}
+    .stat b{font-size:28px}
+    .stat span{font-size:9px;letter-spacing:.16em}
     .cards{grid-template-columns:1fr}
     .people{gap:18px}
     .person{width:calc(50% - 9px)}
@@ -228,9 +228,8 @@
 <section class="stats">
   <div class="wrap grid">
     <div class="stat"><b>[XX]</b><span>Active Members</span></div>
-    <div class="stat"><b>[XX]</b><span>Startups Advised</span></div>
-    <div class="stat"><b>[XX]</b><span>Fellows Sent to Israel</span></div>
-    <div class="stat"><b>[XX]</b><span>Chapters Worldwide</span></div>
+    <div class="stat"><b>57</b><span>TAMID Campuses</span></div>
+    <div class="stat"><b>9,000+</b><span>Alumni Network</span></div>
   </div>
 </section>
 
@@ -262,7 +261,7 @@
     <div class="cards">
       <div class="card reveal"><div class="num">01</div><h3>Education</h3><p>A new-member curriculum covering consulting frameworks, financial modeling, and the Israeli tech ecosystem.</p></div>
       <div class="card reveal"><div class="num">02</div><h3>Consulting</h3><p>Pro-bono projects for Israeli startups, from market sizing to go-to-market strategy, presented to founders.</p></div>
-      <div class="card reveal"><div class="num">03</div><h3>Investment Fund</h3><p>Equity research on Israeli and Israel-linked public companies, with pitches in national stock competitions.</p></div>
+      <div class="card reveal"><div class="num">03</div><h3>Investment Fund</h3><p>Hands-on investing in the Israeli stock market with real dollars, backed by equity research and stock pitches.</p></div>
       <div class="card reveal"><div class="num">04</div><h3>Summer Fellowship</h3><p>An eight-week internship in Israel with a startup or established company, plus a cohort of TAMID peers.</p></div>
     </div>
   </div>
@@ -275,16 +274,15 @@
       <div class="eyebrow">Join Us</div>
       <h2 class="h-sec">Recruitment</h2>
       <div class="rule"></div>
-      <p style="color:var(--muted);max-width:640px;font-size:17px">No prior business experience is required, just curiosity and drive. Here's how our Fall 2026 recruitment ran; dates for the next cycle are coming soon.</p>
+      <p style="color:var(--muted);max-width:640px;font-size:17px">No prior business experience is required, just curiosity and drive. Winter 2027 recruitment dates will be announced soon.</p>
     </div>
-    <!-- Update these dates each recruitment cycle -->
+    <!-- Update these dates each recruitment cycle (replace "TBA" with the date) -->
     <div class="timeline reveal">
-      <div class="step"><div class="date">Sep 22</div><h4>Activities Fair</h4><p>Meet us at the Enormous Activities Fair, 11 AM–2 PM.</p></div>
-      <div class="step"><div class="date">Sep 24</div><h4>Applications Open</h4><p>The application goes live at 12 PM.</p></div>
-      <div class="step"><div class="date">Sep 30</div><h4>Info Session</h4><p>Meet the board and learn about our programs, 6–7 PM.</p></div>
-      <div class="step"><div class="date">Oct 2</div><h4>Application Due</h4><p>Submit your application by 11:59 PM.</p></div>
-      <div class="step"><div class="date">Oct 5–6</div><h4>Coffee Chats</h4><p>One-on-one conversations with current members.</p></div>
-      <div class="step"><div class="date">October</div><h4>Final Interviews</h4><p>The last round before new members are announced.</p></div>
+      <div class="step"><div class="date">TBA</div><h4>Applications Open</h4><p>The application goes live online.</p></div>
+      <div class="step"><div class="date">TBA</div><h4>Info Session</h4><p>Meet the board and learn about our programs.</p></div>
+      <div class="step"><div class="date">TBA</div><h4>Application Due</h4><p>Submit your written application.</p></div>
+      <div class="step"><div class="date">TBA</div><h4>Coffee Chats</h4><p>One-on-one conversations with current members.</p></div>
+      <div class="step"><div class="date">TBA</div><h4>Final Interviews</h4><p>The last round before new members are announced.</p></div>
     </div>
     <a href="#" class="btn dark reveal">Apply Now</a>
   </div>
@@ -326,7 +324,7 @@
     <p>Whether you're a student interested in joining or a company looking to partner with us, we'd love to hear from you.</p>
     <div class="ctas">
       <a href="mailto:ucla@tamidgroup.org" class="btn">Email Us</a>
-      <a href="#" class="btn ghost">Join Mailing List</a>
+      <a href="https://www.instagram.com/uclatamid/" target="_blank" rel="noopener" class="btn ghost">Follow on Instagram</a>
     </div>
   </div>
 </section>
@@ -336,7 +334,7 @@
   <div class="wrap">
     <div>&copy; <span id="yr"></span> TAMID Group at UCLA &middot; ucla@tamidgroup.org</div>
     <div class="socials">
-      <a href="#">Instagram</a><a href="#">LinkedIn</a><a href="https://tamidgroup.org">National</a>
+      <a href="https://www.instagram.com/uclatamid/" target="_blank" rel="noopener">Instagram</a><a href="https://www.linkedin.com/company/tamid-at-ucla" target="_blank" rel="noopener">LinkedIn</a><a href="https://tamidgroup.org">National</a>
     </div>
   </div>
 </footer>
